@@ -1,0 +1,43 @@
+.menuItem {
+  background-color: #37474f;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1.2rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem h2 {
+  font-size: 1.6rem;
+  color: #C7FFD8;
+}
+
+.menuItem .colorImage {
+    color: #C7FFD8;
+}
+
+.menuItem a:link {
+    text-decoration: none;
+    color: #C7FFD8;
+  }
+  
+  .menuItem a:visited {
+    text-decoration: none;
+    color: #C7FFD8;
+  }
+  
+  .menuItem a:hover {
+    text-decoration: none;
+    color: #C7FFD8;
+  }
+  
+  .menuItem a:active {
+    text-decoration: none;
+    color: #C7FFD8;
+  }
