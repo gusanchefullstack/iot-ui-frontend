@@ -1,15 +1,41 @@
 import "./App.css";
-import MenuItem from "./components/MenuItem";
+import Cabinet from "./components/Cabinet";
+import Organizations from "./components/Organization";
+import Sites from "./components/Site";
+import MeasuringPoints from "./components/MeasuringPoints";
+import Boards from "./components/Boards";
+import Sensors from "./components/Sensor";
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
 
 function App() {
+  const route = createBrowserRouter([
+    {
+      path:"/",
+      element: <Cabinet/>
+    },
+    {
+      path:"/organizations",
+      element: <Organizations/>
+    },
+    {
+      path:"/sites",
+      element: <Sites/>
+    },
+    {
+      path:"/points",
+      element: <MeasuringPoints/>
+    },
+    {
+      path:"/boards",
+      element: <Boards/>
+    },
+    {
+      path:"/sensors",
+      element:<Sensors/>
+    }
+  ])
   return (
-    <>
-      <MenuItem option="Organizations" icon="fa-solid fa-building fa-3x" />
-      <MenuItem option="Sites" icon="fa-solid fa-sitemap fa-3x" />
-      <MenuItem option="Measuring Points" icon="fa-solid fa-thumbtack fa-3x" />
-      <MenuItem option="Boards" icon="fa-solid fa-microchip fa-3x" />
-      <MenuItem option="Sensors" icon="fa-solid fa-wifi fa-3x" />
-    </>
+    <RouterProvider router={route}></RouterProvider>
   );
 }
 
